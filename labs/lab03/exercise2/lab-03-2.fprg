@@ -4,9 +4,9 @@
         <attribute name="name" value="lab-03-2"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-07-08 11:30:26 AM"/>
-        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wODsxMToyNjoxNCBBTTsyNzQw"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wODsxMTozMDoyNiBBTTsyOzI4NDc="/>
+        <attribute name="saved" value="2026-07-08 12:04:30 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wODsxMjowMjo1NCBQTTsyNzU0"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wODsxMjowNDozMCBQTTsyOzI4NTk="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,7 +14,7 @@
             <declare name="numNight" type="Integer" array="False" size=""/>
             <input variable="numNight"/>
             <declare name="totalPayment" type="Integer" array="False" size=""/>
-            <assign variable="totalPayment" expression="numNight * 250 + (250 * 15 / 100)"/>
+            <assign variable="totalPayment" expression="numNight * 250 +(250 *15/100)"/>
             <output expression="totalPayment" newline="True"/>
         </body>
     </function>
