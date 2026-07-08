@@ -4,12 +4,27 @@
         <attribute name="name" value="exercise-2"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-07-01 10:59:46 AM"/>
+        <attribute name="saved" value="2026-07-01 11:29:33 AM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMDo1OTozMSBBTTsyNzM3"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMDo1OTo0NiBBTTsxOzI4NTE="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMToyOTozMyBBTTs1OzI4NDk="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="lengthcm" type="Integer" array="False" size=""/>
+            <input variable="lengthcm"/>
+            <declare name="pricepermeter" type="Integer" array="False" size=""/>
+            <input variable="pricepermeter"/>
+            <declare name="lengthm" type="Integer" array="False" size=""/>
+            <assign variable="lengthm" expression="lengthcm / 100"/>
+            <declare name="extra" type="Integer" array="False" size=""/>
+            <assign variable="extra" expression="lengthm * 0.10"/>
+            <declare name="totallength" type="Integer" array="False" size=""/>
+            <assign variable="totallength" expression="lengthm + extra"/>
+            <declare name="totalprice" type="Integer" array="False" size=""/>
+            <assign variable="totalprice" expression="lengthm * pricepermeter"/>
+            <output expression="totallength" newline="True"/>
+            <output expression="totalprice" newline="True"/>
+        </body>
     </function>
 </flowgorithm>

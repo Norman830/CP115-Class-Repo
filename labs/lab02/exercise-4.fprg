@@ -4,12 +4,20 @@
         <attribute name="name" value="exercise-4"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-07-01 11:00:19 AM"/>
+        <attribute name="saved" value="2026-07-01 11:36:31 AM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMTowMDowNyBBTTsyNzI3"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMTowMDoxOSBBTTsxOzI4Mzg="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMTozNjozMSBBTTszOzI4NDM="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="distancekm" type="Integer" array="False" size=""/>
+            <input variable="distancekm"/>
+            <declare name="literused" type="Integer" array="False" size=""/>
+            <assign variable="literused" expression="distancekm /100"/>
+            <declare name="totalprice" type="Integer" array="False" size=""/>
+            <assign variable="totalprice" expression="literused * 2.05"/>
+            <output expression="totalprice" newline="True"/>
+        </body>
     </function>
 </flowgorithm>

@@ -4,18 +4,22 @@
         <attribute name="name" value="exercise-1"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-07-01 10:56:40 AM"/>
+        <attribute name="saved" value="2026-07-01 11:27:46 AM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMDo0NzoyMiBBTTsyNzM0"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMDo1Njo0MCBBTTsyOzI4NDM="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMToyNzo0NiBBTTs3OzI4NTM="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="ringgit" type="Integer" array="False" size=""/>
             <input variable="ringgit"/>
-            <assign variable="calculate" expression="bahtbasedonringgitwitha2%commisionfee"/>
-            <declare name="baht" type="Integer" array="False" size=""/>
-            <output expression="baht" newline="True"/>
+            <declare name="commisionfee" type="Integer" array="False" size=""/>
+            <assign variable="commisionfee" expression="ringgit * 2/100"/>
+            <declare name="ramainingringgit" type="Integer" array="False" size=""/>
+            <assign variable="ramainingringgit" expression="ringgit - commisionfee"/>
+            <declare name="totalbaht" type="Integer" array="False" size=""/>
+            <assign variable="totalbaht" expression="ramainingringgit * 8.14"/>
+            <output expression="totalbaht" newline="True"/>
         </body>
     </function>
 </flowgorithm>
