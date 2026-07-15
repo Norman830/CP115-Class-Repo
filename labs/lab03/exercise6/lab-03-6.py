@@ -1,7 +1,7 @@
-yardLength = int(input())
-yardWidth = int(input())
-houseLength = int(input())
-houseWidth = int(input())
-squaremeter = yardLength * yardWidth - houseLength * houseWidth
-wage = squaremeter * 2
+yardLength = float(input())
+yardWidth = float(input())
+houseLength = float(input())
+houseWidth = float(input())
+squaremeter = float(yardLength * yardWidth - houseLength * houseWidth)
+wage = float(squaremeter * 2)
 print(wage)
