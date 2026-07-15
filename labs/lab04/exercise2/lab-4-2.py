@@ -1,6 +1,6 @@
 income = int(input())
 if income <= 50000:
-    toaltax = income * 0
+    totaltax = income * 0
 else:
     if income <= 100000:
         totaltax = (income - 50000) * 1 / 100
