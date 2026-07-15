@@ -7,3 +7,4 @@ totalAmount = principal + interest
 print(totalAmount)
 monthlyInterest = float(interest) / time * 12
 print(monthlyInterest)
+ 
