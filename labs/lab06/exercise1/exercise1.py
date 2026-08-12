@@ -7,7 +7,7 @@ tmuffin = muffin  * 2.10
 twater = water * 1.05
 subtotal = tcoffee + tmuffin + twater 
 tax = subtotal *0.06
-finaltotal = tax + subtotal
+finaltotal = tax + subtotal 
 
 print(f"========== RECEIPT ==========\n"
       f"Item\tPrice\tQty\tTotal\n"
