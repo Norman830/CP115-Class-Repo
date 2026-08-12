@@ -17,4 +17,4 @@ print(f"========== RECEIPT ==========\n"
       f"------------------------------\n"
       f"Subtotal\t\t{subtotal:.2f}\n"
       f"Tax(6%)\t\t\t{tax:.2f}\n"
-      f"Total\t\t\t{finaltotal:.2f}")
+      f"Total\t\t\t{finaltotal:.2f}") 
